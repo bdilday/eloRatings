@@ -1,0 +1,104 @@
+<!-- 
+Copyright (c) 2014, Ben Dilday
+bepd50 at gmail dot com
+All rights reserved.
+
+Redistribution and use in source and binary forms, with or without modification,
+are permitted provided that the following conditions are met:
+
+* Redistributions of source code must retain the above copyright notice, this
+  list of conditions and the following disclaimer.
+
+* Redistributions in binary form must reproduce the above copyright notice, this
+  list of conditions and the following disclaimer in the documentation and/or
+  other materials provided with the distribution.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR
+ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+(INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON
+ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+-->
+
+<!-- this code has been adopted from this code 
+href="http://prcweb.co.uk/lab/what-makes-us-happy/ created by Peter Cook.
+-->
+
+<!DOCTYPE html>
+<meta charset="utf-8">
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>archived ELO ratings</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/svg.css"> 
+    
+  </head>
+  
+  <body>
+    <div id="wrapper">
+      <div id="chart">
+      </div>
+      
+      <div id="title">
+	<h1>archived ELO Ratings</h1>
+      </div>
+      
+      <div id="about">
+	<!-- <h4>About</h4> -->
+
+<!--	<p>Download the code from <a href="https://github.com/bdilday/HOF_selector" target="_new"> github</a>, or contact me by <a href="mailto:bepd50@gmail.com" target = "_new">email</a>. -->
+      </div>
+    </div>
+    
+    <div id="menull">
+      <h2>&uarr; Y axis</h2>
+      <ul id="y-axis-menu-l"></ul>
+      <ul id="y-axis-menu-r"></ul>
+    </div>
+    <div id="menurl">
+      <h2>&rarr; X axis</h2>
+      <ul id="x-axis-menu-l"></ul>
+      <ul id="x-axis-menu-r"></ul>
+    </div>
+
+    <form>    
+<!--      <div id="txt-input1"> -->
+      <div id="txt-input2">
+	<input id="inp_minyear" type="text" value="1">
+	<h2>minRank</h2>
+	<input id="inp_maxyear" type="text" value="40">
+	<h2>maxRank</h2>
+	<input type="button" value="go" onClick="doStuff()">      
+      </div>
+
+      </form>
+
+
+    </div>
+
+    <div id="playerList1">
+      <ul>player list</ul>
+    </div>
+    <div id="playerList2">     
+      <ul>player list</ul>
+    </div>
+    <div id="playerList3">     
+      <ul>player list</ul>
+    </div>
+    
+</div>
+
+<script src="d3/d3.v3.min.js"></script>
+<script src="js/underscore-min.js"></script>
+
+<script src="js/main.js"></script> 
+<!-- <script src="js/main_test.js"></script> -->
+
+</body>
+</html>
